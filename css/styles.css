@@ -1,0 +1,178 @@
+* a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #72a5bf;
+}
+
+body {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "navbar" "main" "left-sidebar" "right-sidebar" "footer";
+  gap: 1rem;
+  padding: 1rem;
+  background-image: url(../img/geabackground.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  font-family: 'Roboto', sans-serif;
+  color: bisque;
+}
+
+.bg-nav {
+  background-color: #bf9b77;
+}
+
+.form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: gainsboro;
+}
+
+/* ordeno el nav para que los titulos queden primero y luego los links */
+/* aca me gustaria que titulos cambien la poscion pero no entiendo como hacerlo */
+/* busco editar el span - LOGRADO ? */
+/* quito los puntos de las listas - LOGRADO */
+footer {
+  background-color: #595e55;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #bda796;
+}
+
+#footer {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer li {
+  list-style: none;
+  text-decoration: none;
+}
+
+#prod_img {
+  margin-top: n 1rem;
+}
+
+#ph_mn {
+  width: 40rem;
+  height: auto;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border: 1rem solid black;
+}
+
+.footer__title {
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.main__nosotras {
+  padding-left: 1rem;
+}
+
+.main__nosotras--txt {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.social__container {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Definiiendo color links */
+a:link {
+  color: #72a5bf;
+}
+
+a:visited {
+  color: #72a5bf;
+}
+
+a:hover {
+  color: red;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .container {
+    -ms-grid-columns: minmax(auto, 250px) minmax(250px, 1fr) minmax(auto, 250px);
+        grid-template-columns: minmax(auto, 250px) minmax(250px, 1fr) minmax(auto, 250px);
+    -ms-grid-rows: min-content 1fr min-content;
+        grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+        grid-template-rows: min-content 1fr min-content;
+        grid-template-areas: "nav nav nav" "left-sidebar main right-sidebar" "footer footer footer";
+  }
+}
+
+.navbar {
+  grid-area: nav;
+}
+
+.left-sidebar {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: left-sidebar;
+}
+
+.right-sidebar {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: right-sidebar;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}

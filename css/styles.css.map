@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,wBAAwB;EAC/B,UAAU,EAAE,OAAiB;EAC7B,OAAO,EAAE,SAAS;EAClB,aAAa,EAAE,GAAG;EAClB,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,SAAS;EACzB,UAAU,EAAE,oBAAoB;CAC7B;;AAEP,AAAA,IAAI,CAAC;EACD,eAAe,EAAE,MAAM;CAC1B",
+    "sources": [
+        "../Clase-10_GIT-reyAlvarez/css/styles.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
