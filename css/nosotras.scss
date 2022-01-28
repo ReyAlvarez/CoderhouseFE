@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+
+    .main__nosotras--txt {
+        max-width: 200px;
+        padding-bottom: 1rem;
+        padding-right: 2rem;
+    }
+    #ph_mn {
+        width:20rem;
+        height:auto;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        border: 1rem solid black;
+    }
+}

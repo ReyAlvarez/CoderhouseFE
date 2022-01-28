@@ -1,0 +1,6 @@
+@mixin cardSize {
+    min-width: 100px;
+    max-width: fit-content;
+    border: 0.75rem solid black;
+
+}

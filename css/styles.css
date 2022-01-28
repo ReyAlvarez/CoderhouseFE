@@ -1,14 +1,19 @@
-* a {
+/* Importing Variables */
+/* Background colors */
+/* Text Colors */
+/* Standar Border */
+* {
   text-decoration: none;
+  margin: 0;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: #72a5bf;
 }
 
 body {
   min-height: 100vh;
+  min-width: 100%;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "navbar" "main" "left-sidebar" "right-sidebar" "footer";
@@ -18,34 +23,55 @@ body {
   background-repeat: no-repeat;
   background-position: cover;
   font-family: 'Roboto', sans-serif;
-  color: bisque;
+  color: #faf0e0;
+}
+
+body a:link {
+  color: #72a5bf;
+}
+
+body a:visited {
+  color: #72a5bf;
+}
+
+body a:hover {
+  color: red;
+}
+
+.main h3 {
+  font-weight: bold;
+}
+
+.main table {
+  border: 1px solid black;
 }
 
 .bg-nav {
-  background-color: #bf9b77;
+  background-color: #755f4c;
 }
 
 .form__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 18rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: gainsboro;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  background-color: #595e55;
 }
 
-/* ordeno el nav para que los titulos queden primero y luego los links */
-/* aca me gustaria que titulos cambien la poscion pero no entiendo como hacerlo */
-/* busco editar el span - LOGRADO ? */
-/* quito los puntos de las listas - LOGRADO */
+.form__container .text-area {
+  width: 1000px;
+}
+
 footer {
-  background-color: #595e55;
+  background-color: #755f4c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,7 +83,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #bda796;
+  color: #faf0e0;
 }
 
 #footer {
@@ -76,11 +102,6 @@ footer {
           align-items: center;
 }
 
-#footer li {
-  list-style: none;
-  text-decoration: none;
-}
-
 #prod_img {
   margin-top: n 1rem;
 }
@@ -93,17 +114,7 @@ footer {
   border: 1rem solid black;
 }
 
-.footer__title {
-  padding-top: 1rem;
-  padding-left: 2rem;
-}
-
 .main__nosotras {
-  padding-left: 1rem;
-}
-
-.main__nosotras--txt {
-  padding-bottom: 1rem;
   padding-left: 1rem;
 }
 
@@ -112,29 +123,18 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-/* Definiiendo color links */
-a:link {
-  color: #72a5bf;
-}
-
-a:visited {
-  color: #72a5bf;
-}
-
-a:hover {
-  color: red;
+  a-margin: 1rem 0rem;
+  a-padding: 1rem 0;
 }
 
 /* Media Queries */
@@ -153,26 +153,43 @@ a:hover {
   grid-area: nav;
 }
 
-.left-sidebar {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: left-sidebar;
-}
-
-.right-sidebar {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: right-sidebar;
-}
-
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
 }
 
+main table {
+  border: 1px solid black;
+}
+
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: footer;
+}
+
+footer .footer__title {
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+footer .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
