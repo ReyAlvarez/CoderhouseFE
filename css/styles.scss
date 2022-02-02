@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     min-width: 100%;
     gap: 1rem;
-    padding: 1rem;
+    padding: 0;
     background-image: url(../img/geabackground.jpg);
     background-repeat:no-repeat;
     background-position: cover;
@@ -31,8 +31,9 @@ body {
     }
 }
 .main {
-    h3 {
+    .main__titulo--gea {
         font-weight: bold;
+        margin: 1rem 0rem 1rem 0rem;
     }
     .table {
         border:1px solid black;
@@ -62,6 +63,9 @@ body {
 footer {
     background-color: $secondary-bg;
     display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;

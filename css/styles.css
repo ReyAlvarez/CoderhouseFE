@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   min-width: 100%;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0;
   background-image: url(../img/geabackground.jpg);
   background-repeat: no-repeat;
   background-position: cover;
@@ -35,8 +35,9 @@ body a:hover {
   color: red;
 }
 
-.main h3 {
+.main .main__titulo--gea {
   font-weight: bold;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 .main .table {
@@ -77,6 +78,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
