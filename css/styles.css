@@ -14,9 +14,6 @@ html {
 body {
   min-height: 100vh;
   min-width: 100%;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "navbar" "main" "left-sidebar" "right-sidebar" "footer";
   gap: 1rem;
   padding: 1rem;
   background-image: url(../img/geabackground.jpg);
@@ -42,8 +39,9 @@ body a:hover {
   font-weight: bold;
 }
 
-.main table {
+.main .table {
   border: 1px solid black;
+  color: #faf0e0;
 }
 
 .bg-nav {
@@ -68,6 +66,10 @@ body a:hover {
 
 .form__container .text-area {
   width: 1000px;
+}
+
+.horarios_container {
+  border: 0.75rem solid black;
 }
 
 footer {
@@ -161,8 +163,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: main;
 }
 
@@ -176,9 +176,8 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
   grid-area: footer;
+  margin-bottom: 0;
 }
 
 footer .footer__title {
