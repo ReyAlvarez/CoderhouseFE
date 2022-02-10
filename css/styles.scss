@@ -13,11 +13,12 @@ html {
 body {
     min-height: 100vh;
     min-width: 100%;
-    gap: 1rem;
+    /* gap: 1rem; */
+    background-color: $primary-bg;
     padding: 0;
-    background-image: url(../img/geabackground.jpg);
-    background-repeat:no-repeat;
-    background-position: cover;
+    /* background-image: url(../img/geabackground.jpg);
+    background-repeat:repeat;
+    background-position: cover; */
     font-family: 'Roboto', sans-serif;
     color: $primary-txt;
     a:link {
@@ -27,7 +28,8 @@ body {
         color: #72a5bf;
     }
     a:hover {
-        color: red;
+        color: #ff0;
+        text-shadow: 0 0 10px #ff0;
     }
 }
 .main {
@@ -45,11 +47,12 @@ body {
 }
 
 .form__container {
-    display: flex;
+    display: inline-flex;
     max-width: 18rem;
     flex-direction: column;
-    justify-items: center;
-    align-items: left;
+    justify-self: center    ;
+    justify-content: center;
+    align-content: center;
     background-color: $siam;
     .text-area {
         width: 1000px;
@@ -135,6 +138,7 @@ main {
 footer {
     display:flex;
     flex-wrap: wrap;
+    color: $white;
     grid-area: footer;
     margin-bottom: 0;
     .footer__title {
