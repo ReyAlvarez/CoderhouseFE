@@ -17,9 +17,6 @@ body {
   /* gap: 1rem; */
   background-color: #eddac4;
   padding: 0;
-  /* background-image: url(../img/geabackground.jpg);
-    background-repeat:repeat;
-    background-position: cover; */
   font-family: 'Roboto', sans-serif;
   color: #25211f;
 }
@@ -33,8 +30,8 @@ body a:visited {
 }
 
 body a:hover {
-  color: #ff0;
-  text-shadow: 0 0 10px #ff0;
+  color: #4a515f;
+  text-shadow: 0 0 10px #4a515f;
 }
 
 .main .main__titulo--gea {
@@ -96,7 +93,27 @@ footer {
   color: #25211f;
 }
 
-#footer {
+footer .float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+footer .my-float {
+  margin-top: 16px;
+}
+
+footer #footer {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
