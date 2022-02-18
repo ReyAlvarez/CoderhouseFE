@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Importing Variables */
 /* Background colors */
 /* Text Colors */
@@ -22,16 +23,20 @@ body {
 }
 
 body a:link {
-  color: #72a5bf;
+  color: #ffffff;
 }
 
 body a:visited {
-  color: #72a5bf;
+  color: #ffffff;
 }
 
 body a:hover {
   color: #4a515f;
   text-shadow: 0 0 10px #4a515f;
+}
+
+body a {
+  text-decoration: none;
 }
 
 .main .main__titulo--gea {
@@ -46,6 +51,18 @@ body a:hover {
 
 .bg-nav {
   background-color: #bd6739;
+}
+
+.breadcrumb li:not(:first-child)::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  content: "→";
+  list-style-type: none;
 }
 
 .form__container {
@@ -93,6 +110,10 @@ footer {
   color: #25211f;
 }
 
+footer .wp-button {
+  margin-top: 14px;
+}
+
 footer .float {
   position: fixed;
   width: 60px;
@@ -103,14 +124,10 @@ footer .float {
   color: #FFF;
   border-radius: 50px;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   -webkit-box-shadow: 2px 2px 3px #999;
           box-shadow: 2px 2px 3px #999;
   z-index: 100;
-}
-
-footer .my-float {
-  margin-top: 16px;
 }
 
 footer #footer {
