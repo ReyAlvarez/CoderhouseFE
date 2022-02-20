@@ -46,26 +46,20 @@ body {
 .bg-nav {
     background-color: $secondary-bg;
 }
-.breadcrumb li:not(:first-child)::before {
-    display: flex;
-    flex-direction: row;
-    content: "→";
-    list-style-type:none;
-  }
 
 
 .form__container {
     display: inline-flex;
-    max-width: 18rem;
     flex-direction: column;
-    justify-self: center    ;
+    justify-self: center;
     justify-content: center;
     align-content: center;
     background-color: $siam;
-    .text-area {
-        width: 1000px;
-
+    .text_area {
+        width: 2000px;
+        height: 100px;
     }
+
 }
 .horarios_container {
     border: 0.75rem solid black;
@@ -94,9 +88,9 @@ footer {
         color:#FFF;
         border-radius:50px;
         text-align:center;
-      font-size:35px;
+        font-size:35px;
         box-shadow: 2px 2px 3px #999;
-      z-index:100;
+        z-index:100;
     }
     #footer {
         display: inline-flex;
@@ -109,8 +103,11 @@ footer {
 
 
 #prod_img {
-    margin-top:n 1rem;
+    margin-top: 1rem;
 }
+//.card {
+//    @include cardSize
+//}
 
 #ph_mn {
     width:40rem;
@@ -125,10 +122,8 @@ footer {
 }
 
 .social__container {
-    width: 10%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     a: {
         margin: 1rem 0rem;
@@ -167,11 +162,12 @@ footer {
     color: $white;
     grid-area: footer;
     margin-bottom: 0;
+    width: 100%;
     .footer__title {
         padding-top: 1rem;
         padding-left: 2rem;
     }
-    .fa {
+    .fa ) {
         padding: 20px;
         font-size: 30px;
         width: 50px;
