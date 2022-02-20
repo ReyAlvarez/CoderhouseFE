@@ -56,7 +56,6 @@ body a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  max-width: 18rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -70,8 +69,9 @@ body a {
   background-color: #595e55;
 }
 
-.form__container .text-area {
-  width: 1000px;
+.form__container .text_area {
+  width: 20rem;
+  height: 15rem;
 }
 
 .horarios_container {
@@ -211,7 +211,7 @@ footer .footer__title {
   padding-left: 2rem;
 }
 
-footer .fa:not(:last-child) {
+footer .fa {
   padding: 20px;
   font-size: 30px;
   width: 50px;
