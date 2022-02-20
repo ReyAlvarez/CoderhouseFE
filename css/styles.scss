@@ -167,7 +167,7 @@ footer {
         padding-top: 1rem;
         padding-left: 2rem;
     }
-    .fa {
+    .fa:not(:last-child) {
         padding: 20px;
         font-size: 30px;
         width: 50px;

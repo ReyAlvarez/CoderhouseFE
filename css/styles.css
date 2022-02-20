@@ -211,7 +211,7 @@ footer .footer__title {
   padding-left: 2rem;
 }
 
-footer .fa {
+footer .fa:not(:last-child) {
   padding: 20px;
   font-size: 30px;
   width: 50px;
