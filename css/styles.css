@@ -38,6 +38,32 @@ body a {
   text-decoration: none;
 }
 
+.modal-container {
+  background-color: azure;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  left: 25vw;
+  opacity: 0;
+  height: 20vh;
+  width: 50vw;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+  background-color: #595e55;
+}
+
 .titulo_gea {
   margin: 2rem 0rem 2rem 0rem;
 }

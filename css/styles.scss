@@ -4,6 +4,12 @@
 * {
     text-decoration: none;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 html {
@@ -32,6 +38,18 @@ body {
         text-decoration: none;
     }
 }
+//Diseño modal
+.modal-container {
+    background-color: white;
+    width: 500px;
+    height: 250px;
+}
+  
+  .modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+    background-color: $siam;
+  }
 .titulo_gea {
     margin: 2rem 0rem 2rem 0rem;
 }
