@@ -5,10 +5,22 @@
 * {
   text-decoration: none;
   margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+nav {
+  padding-left: 1em;
 }
 
 body {
@@ -38,30 +50,60 @@ body a {
   text-decoration: none;
 }
 
-.modal-container {
-  background-color: azure;
+body .main {
+  padding-left: 1em;
+}
+
+body .mainProductos {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.btn-cart {
+  border: none;
+  background-color: transparent;
+  padding: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: fixed;
-  left: 25vw;
-  opacity: 0;
-  height: 20vh;
-  width: 50vw;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
 }
 
-.modal-container.show {
-  pointer-events: auto;
-  opacity: 1;
-  background-color: #595e55;
+.btn-cart i {
+  color: white;
+  font-size: 30px;
+}
+
+.btn-cart span {
+  font-size: 1rem;
+  color: white;
+}
+
+.modal-container {
+  background-color: whitesmoke;
+  border: 5px solid turquoise;
+  color: black;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 8px 13px 20px #25211f;
+          box-shadow: 8px 13px 20px #25211f;
+  border-radius: 5px;
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .titulo_gea {
@@ -70,6 +112,80 @@ body a {
 
 .bg-nav {
   background-color: #bd6739;
+  -webkit-box-shadow: 10px #595e55;
+          box-shadow: 10px #595e55;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
 }
 
 .form__container {
