@@ -6,7 +6,9 @@ const facialCare = [{
     productDescription: "Limpia, tonifica e hidrata. Las micelas atrapan como un imán las impurezas, células muertas, sebo y restos de maquillaje sin irritar. Con aceite de ricino y manzanilla. Colocar en un algodón y pasar por el rostro. No necesita enjuague. *Agitar antes de usar", 
     amount: 125,
     unit: "Ml",
-    price: 610
+    price: 610,
+    img: "./img/gea fotos//Productos/prod_eterna.jpg"
+
 },
 {
     id:2,
@@ -14,21 +16,27 @@ const facialCare = [{
     productDescription: "Nuestro paso 2 en la rutina facial ✨🙌 Infaltable para regular el pH y así restablecer la acidez de la piel & eliminar los restos de grasa o bacterias que pueden haber quedado luego incluso de la limpieza. El tónico mejora la textura, aumenta la irrigación sanguínea provocando la revitalización de los tejidos, aporta luminosidad y refresca nuestro rostro. Este en especial tiene agua de rosas, hidrolato orgánico de lavanda y tilo, por lo cual nos brinda también una sensación de alivio y frescura con unas notas de amor y dulzura para seguir el día con las emociones renovadas. Presentación por 100ml", 
     amount: 100,
     unit: "Ml",
-    price: 500
+    price: 500,
+    img: "./img/gea fotos//Productos/prod_eterna.jpg"
+
 },
 {
     id:3, 
     productName:"Jabones de coco",
+    productDescription: "bla bla",
     amount: 80,
     unit: "Gr",
-    price: 230
+    price: 230,
+    img: "./img/gea fotos//Productos/prod_eterna.jpg"
 },
 {
     id:4,
     productName:"Jabón detox",
+    productDescription: "bla bla",
     amount: 80,
     unit: "Gr",
-    price: 200
+    price: 200,
+    img: "./img/gea fotos//Productos/prod_eterna.jpg"
 }
 ];
 
@@ -96,181 +104,181 @@ price: 670
 }
 ];
 
-const hairCare = [{
-id: 1,
-productName: "Shampoo hidratante",
-amount: 80,
-unit: "Gr",
-price: 500
-},
-{
-id: 2,
-productName: "Shampoo fortalecedor",
-amount: 80,
-unit: "Gr",
-price: 500
-},
-{
-id: 3,
-productName: "Shampoo reparador",
-amount: 80,
-unit: "Gr",
-price: 500
-},
-{
-id: 4,
-productName: "Acondicionador solido",
-amount: 60,
-unit: "Gr",
-price: 500
-},
-{
-id: 5,
-productName: "Reparador de puntas",
-amount: 30,
-unit: "Ml",
-price: 600
-}
-];
+// const hairCare = [{
+// id: 1,
+// productName: "Shampoo hidratante",
+// amount: 80,
+// unit: "Gr",
+// price: 500
+// },
+// {
+// id: 2,
+// productName: "Shampoo fortalecedor",
+// amount: 80,
+// unit: "Gr",
+// price: 500
+// },
+// {
+// id: 3,
+// productName: "Shampoo reparador",
+// amount: 80,
+// unit: "Gr",
+// price: 500
+// },
+// {
+// id: 4,
+// productName: "Acondicionador solido",
+// amount: 60,
+// unit: "Gr",
+// price: 500
+// },
+// {
+// id: 5,
+// productName: "Reparador de puntas",
+// amount: 30,
+// unit: "Ml",
+// price: 600
+// }
+// ];
 
-const corporalCare = [{
-id: 1,
-productName: "Desodorante lata",
-amount: 50,
-unit: "Gr",
-price: 400
-},
-{
-id: 2,
-productName: "Pasta dental solida",
-amount: 30,
-unit: "Gr",
-price: 260
-},
-{
-id: 3,
-productName: "Emulsion corporal",
-amount: 200,
-unit: "Gr",
-price: 700
-},
-{
-id: 4,
-productName: "Protector Solar",
-amount: 200,
-unit: "Gr",
-price: 800
-},
-{
-id: 5,
-productName: "Repelente spray",
-amount: 100,
-unit: "Ml",
-price: 400
-},
-{
-id: 6,
-productName: "Elixir intimo",
-amount: 30,
-unit: "Ml",
-price: 720
-},
-{
-id: 7,
-productName: "Blend para pestañas y cejas",
-amount: 7,
-unit: "Ml",
-price: 650
-}
-];
+// const corporalCare = [{
+// id: 1,
+// productName: "Desodorante lata",
+// amount: 50,
+// unit: "Gr",
+// price: 400
+// },
+// {
+// id: 2,
+// productName: "Pasta dental solida",
+// amount: 30,
+// unit: "Gr",
+// price: 260
+// },
+// {
+// id: 3,
+// productName: "Emulsion corporal",
+// amount: 200,
+// unit: "Gr",
+// price: 700
+// },
+// {
+// id: 4,
+// productName: "Protector Solar",
+// amount: 200,
+// unit: "Gr",
+// price: 800
+// },
+// {
+// id: 5,
+// productName: "Repelente spray",
+// amount: 100,
+// unit: "Ml",
+// price: 400
+// },
+// {
+// id: 6,
+// productName: "Elixir intimo",
+// amount: 30,
+// unit: "Ml",
+// price: 720
+// },
+// {
+// id: 7,
+// productName: "Blend para pestañas y cejas",
+// amount: 7,
+// unit: "Ml",
+// price: 650
+// }
+// ];
 
-const therapeutic = [{
-id: 1,
-productName: "Sagrada",
-amount: 50,
-unit: "Gr",
-price: 620
-},
-{
-id: 2,
-productName: "Amazonica",
-amount: 50,
-unit: "Gr",
-price: 620
-},
-{
-id: 3,
-productName: "Ungüento respirar",
-amount: 50,
-unit: "Gr",
-price: 450
-},
-{
-id: 4,
-productName: "Ungüento suavidad",
-amount: 50,
-unit: "Gr",
-price: 450
-},
-{
-id: 5,
-productName: "Ungüento sagrado",
-amount: 50,
-unit: "Gr",
-price: 500
-},
-{
-id: 6,
-productName: "Tattoo",
-amount: 30,
-unit: "Gr",
-price: 400
-},
-{
-id: 7,
-productName: "Brumas auricas",
-amount: 100,
-unit: "Ml",
-price: 750
-}
-];
+// const therapeutic = [{
+// id: 1,
+// productName: "Sagrada",
+// amount: 50,
+// unit: "Gr",
+// price: 620
+// },
+// {
+// id: 2,
+// productName: "Amazonica",
+// amount: 50,
+// unit: "Gr",
+// price: 620
+// },
+// {
+// id: 3,
+// productName: "Ungüento respirar",
+// amount: 50,
+// unit: "Gr",
+// price: 450
+// },
+// {
+// id: 4,
+// productName: "Ungüento suavidad",
+// amount: 50,
+// unit: "Gr",
+// price: 450
+// },
+// {
+// id: 5,
+// productName: "Ungüento sagrado",
+// amount: 50,
+// unit: "Gr",
+// price: 500
+// },
+// {
+// id: 6,
+// productName: "Tattoo",
+// amount: 30,
+// unit: "Gr",
+// price: 400
+// },
+// {
+// id: 7,
+// productName: "Brumas auricas",
+// amount: 100,
+// unit: "Ml",
+// price: 750
+// }
+// ];
 
-const ecoAccesories = [{
-id: 1,
-productName: "Jabonera madera simple",
-amount: 1,
-unit: "U",
-price: 450
-},
-{
-id: 2,
-productName: "Cepillo dental de bamboo",
-amount: 1,
-unit: "U",
-price: 280
-},
-{
-id: 3,
-productName: "Cepillo capilar de bamboo",
-amount: 1,
-unit: "U",
-price: 1050
-},
-{
-id: 4,
-productName: "Hilo dental vegano",
-amount: 1,
-unit: "U",
-price: 530
-},
-{
-id: 5,
-productName: "Toallitas de tela",
-amount: 50,
-unit: "Gr",
-price: 620
-}
-];
+// const ecoAccesories = [{
+// id: 1,
+// productName: "Jabonera madera simple",
+// amount: 1,
+// unit: "U",
+// price: 450
+// },
+// {
+// id: 2,
+// productName: "Cepillo dental de bamboo",
+// amount: 1,
+// unit: "U",
+// price: 280
+// },
+// {
+// id: 3,
+// productName: "Cepillo capilar de bamboo",
+// amount: 1,
+// unit: "U",
+// price: 1050
+// },
+// {
+// id: 4,
+// productName: "Hilo dental vegano",
+// amount: 1,
+// unit: "U",
+// price: 530
+// },
+// {
+// id: 5,
+// productName: "Toallitas de tela",
+// amount: 50,
+// unit: "Gr",
+// price: 620
+// }
+// ];
 
 // Console logging to check if everythigns is well written
 console.log (corporalCare);
